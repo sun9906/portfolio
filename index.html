@@ -1,232 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>해태제과</title>
-    <link rel="stylesheet"g href="./css/main.css">
+    <link rel="stylesheet" g href="./css/main.css" />
     <script src="./script/main.js"></script>
     <script src="./script/jquery-4.0.0.min.js"></script>
     <script src="./script/main.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="header-top">
-            <div class="header-inner">
-                <!-- Logo -->
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="./image/logo.png" alt="해태로고">
-                    </a>
-                </h1>
-                <!-- Menu -->
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">제품소개</a></li>
-                        <li><a href="#">달콤한 세상</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">ESG경영</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                </nav>
-                <!-- Right Menu -->
-                <div class="header-util">
-                    <button class="lang-btn" aria-label="언어 선택">🌐</button>
-                </div>
-            </div>
+      <div class="header-top">
+        <div class="header-inner">
+          <!-- Logo -->
+          <h1 class="logo">
+            <a href="#">
+              <img src="./image/logo.png" alt="해태로고" />
+            </a>
+          </h1>
+          <!-- Menu -->
+          <nav class="gnb">
+            <ul class="main-menu">
+              <li class="menu-item">
+                <a href="#" class="main-link">회사소개</a>
+                <ul class="sub-menu">
+                  <li><a href="#">회장 인사말</a></li>
+                  <li><a href="#">해태 소개</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">해태 네트워크</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                  <li><a href="#">채용</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="main-link">제품소개</a>
+                <ul class="sub-menu">
+                  <li><a href="./sub/char.html">해태제과 캐릭터</a></li>
+                  <li><a href="#">비스켓</a></li>
+                  <li><a href="#">스낵</a></li>
+                  <li><a href="#">껌</a></li>
+                  <li><a href="#">초코</a></li>
+                  <li><a href="#">캔디</a></li>
+                  <li><a href="#">식품</a></li>
+                  <li><a href="#">전체제품</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="main-link">달콤한세상</a>
+                <ul class="sub-menu">
+                  <li><a href="#">CF</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">해태뉴스</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="main-link">이벤트</a>
+                <ul class="sub-menu">
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">당첨자 발표</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="main-link">ESG경영</a>
+                <ul class="sub-menu">
+                  <li><a href="#">윤리경영</a></li>
+                  <li><a href="#">환경</a></li>
+                  <li><a href="#">사회</a></li>
+                  <li><a href="#">지배구조</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="main-link">고객센터</a>
+                <ul class="sub-menu">
+                  <li><a href="#">고객의소리</a></li>
+                  <li><a href="#">아이디어 제안</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- Right Menu -->
+          <div class="header-util">
+            <button class="lang-btn" aria-label="언어 선택">🌐</button>
+          </div>
         </div>
+      </div>
 
-        <div class="mega-dropdown">
-            <div class="header-inner">
-                <div class="logo-space"></div>
-                <div class="sub-menu-grid">
-                    <!-- 1. 회사소개 -->
-                    <ul class="sub-list">
-                        <li><a href="#">회장 인사말</a></li>
-                        <li><a href="#">해태 소개</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">해태 네트워크</a></li>
-                        <li><a href="#">오시는 길</a></li>
-                        <li><a href="#">채용</a></li>
-                        <li><a href="#">IR 정보</a></li>
-                    </ul>
-                    <!-- 2. 제품소개 -->
-                    <ul class="sub-list">
-                        <li><a href="#">해태제과 캐릭터</a></li>
-                        <li><a href="#">비스켓</a></li>
-                        <li><a href="#">스낵</a></li>
-                        <li><a href="#">껌</a></li>
-                        <li><a href="#">초코</a></li>
-                        <li><a href="#">캔디</a></li>
-                        <li><a href="#">식품</a></li>
-                        <li><a href="#">전체제품</a></li>
-                    </ul>
-                    <!-- 3. 달콤한 세상 -->
-                    <ul class="sub-list">
-                        <li><a href="#">CF</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">해태뉴스</a></li>
-                    </ul>
-                    <!-- 4. 이벤트 -->
-                    <ul class="sub-list">
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">당첨자 발표</a></li>
-                    </ul>
-                    <!-- 5. ESG경영 -->
-                    <ul class="sub-list">
-                        <li><a href="#">윤리경영</a></li>
-                        <li><a href="#">환경</a></li>
-                        <li><a href="#">사회</a></li>
-                        <li><a href="#">지배구조</a></li>
-                    </ul>
-                    <!-- 6. 고객센터 -->
-                    <ul class="sub-list">
-                        <li><a href="#">고객의 소리</a></li>
-                        <li><a href="#">아이디어 제안</a></li>
-                    </ul>
-                </div>
-                <div class="util-space"></div>
-            </div>
-        </div>
+      <div class="gnb-bg"></div>
     </header>
-    <!-- //Header -->
 
     <!-- Main -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-img">
-                <img src="./image/hero.png" alt="해태제과 메인 이미지">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-img">
+          <img src="./image/hero.png" alt="해태제과 메인 이미지" />
+        </div>
+        <div class="hero-text">
+          <p>HAPPY SWEET MOMENT</p>
+          <h2>달콤한 순간을 <br />함께하세요</h2>
+          <a href="#" class="hero-btn">자세히보기</a>
+        </div>
+      </section>
+      <section class="intro-section">
+        <div class="intri-inner">
+          <div class="intro-title">
+            <h2><span>달콤한 세상으로의 초대</span></h2>
+            <p>해태제과는 늘 새롭고 달콤한 세상을 꿈꿉니다</p>
+          </div>
+          <div class="intro-list">
+            <div class="intro-card">
+              <div class="img-box">
+                <img src="./image/intro 1.png" alt="1945" />
+              </div>
+              <h3 class="card-title">Since 1945</h3>
+              <p class="card-desc">
+                좋은 제품은 끊임없이 연구하며 <br />
+                고객과 함께하는 달콤한 해태제과
+              </p>
             </div>
-            <div class="hero-text">
-                <p>HAPPY SWEET MOMENT</p>
-                <h2>달콤한 순간을 <br>함께하세요</h2>
-                <a href="#" class="hero-btn">자세히보기</a>
+            <div class="intro-card">
+              <div class="img-box">
+                <img src="./image/intro2.png" alt="Dream World" />
+              </div>
+              <h3 class="card-title">Dream World</h3>
+              <p class="card-desc">
+                늘 열린 마음으로 세상을 보고 <br />
+                새로운 것을 상상하는 달콤한 기업
+              </p>
             </div>
-        </section>
-
-        <!-- Product Section -->
-        <section class="product">
-            <div class="section-ti">
-                <p>PRODUCT</p>
-                <h2>해태의 인기제품</h2>
-                <span>오랫동안 사랑받아온 해태의 다양한 제품을 만나보세요</span>
+            <div class="intro-card">
+              <div class="img-box">
+                <img src="./image/intro3.png" alt="Good Friends" />
+              </div>
+              <h3 class="card-title">Good Friends</h3>
+              <p class="card-desc">
+                올바르고 좋은 기운으로 <br />
+                고객을 지켜주는 달콤한 평생친구
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- 3열 카드 배치 영역 -->
-            <div class="product-list">
-                <!-- Product 01 -->
-                <article class="product-card">
-                    <div class="product-img">
-                        <img src="./image/pro1.jpg" alt="허니버터칩">
-                    </div>
-                    <div class="product-info">
-                        <span>SNACK</span>
-                        <h3>허니버터칩</h3>
-                        <p>달콤하고 고소한 맛으로 사랑받는 <br>해태의 대표 스낵</p>
-                        <a href="#">VIEW MORE →</a>
-                    </div>
-                </article>
+      <!-- Product Section -->
+      <section class="product">
+        <div class="section-ti">
+          <p>PRODUCT</p>
+          <h2>해태의 인기제품</h2>
+          <span>오랫동안 사랑받아온 해태의 다양한 제품을 만나보세요</span>
+        </div>
 
-                <!-- Product 02 -->
-                <article class="product-card">
-                    <div class="product-img">
-                        <img src="./image/pro2.jpg" alt="홈런볼">
-                    </div>
-                    <div class="product-info">
-                        <span>SNACK</span>
-                        <h3>홈런볼</h3>
-                        <p>부드러운 초콜릿과 바삭한 과자의 <br>달콤한 조화</p>
-                        <a href="#">VIEW MORE →</a>
-                    </div>
-                </article>
-
-                <!-- Product 03 -->
-                <article class="product-card">
-                    <div class="product-img">
-                        <img src="./image/pro3.jpg" alt="에이스">
-                    </div>
-                    <div class="product-info">
-                        <span>BISCUIT</span>
-                        <h3>에이스</h3>
-                        <p>커피와 함께 즐기기 좋은 <br>담백하고 바삭한 크래커</p>
-                        <a href="#">VIEW MORE →</a>
-                    </div>
-                </article>
+        <!-- 3열 카드 배치 영역 -->
+        <div class="product-list">
+          <!-- Product 01 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro1.jpg" alt="허니버터칩" />
             </div>
-
-            <a href="#" class="more-btn">제품 전체보기</a>
-        </section>
-
-        <!-- Brand Section -->
-        <section class="brand">
-            <div class="brand-inner">
-                <p>BRAND STORY</p>
-                <h2>맛있는 행복을 <br>만들어갑니다.</h2>
-                <span>오랜 시간 사랑받아온 해태제과의 이야기와 <br>다양한 브랜드를 만나보세요</span>
-                <a href="#" class="brand-btn">브랜드 이야기</a>
+            <div class="product-info">
+              <span>SNACK</span>
+              <h3>허니버터칩</h3>
+              <p>달콤하고 고소한 맛으로 사랑받는 <br />해태의 대표 스낵</p>
+              <a href="./sub/detail-honey butter.html" class="view-more"
+                >VIEW MORE -></a
+              >
             </div>
-        </section>
+          </article>
 
-        <!-- News Section -->
-        <section class="news">
-            <div class="section-title">
-                <p>News & Event</p>
-                <h2>새로운 소식을 만나보세요</h2>
+          <!-- Product 02 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro2.jpg" alt="홈런볼" />
             </div>
-            <div class="news-list">
-                <a href="#" class="news-card">
-                    <div class="news-number">01</div>
-                    <div class="news-content">
-                        <span>News</span>
-                        <h3>해태제과의 새로운 소식을 확인해보세요</h3>
-                        <strong>→</strong>
-                    </div>
-                </a>
-                <a href="#" class="news-card">
-                    <div class="news-number">02</div>
-                    <div class="news-content">
-                        <span>Event</span>
-                        <h3>다양한 이벤트와 즐거운 혜택을 만나보세요</h3>
-                        <strong>→</strong>
-                    </div>
-                </a>
-                <a href="#" class="news-card">
-                    <div class="news-number">03</div>
-                    <div class="news-content">
-                        <span>Notice</span>
-                        <h3>해태제과의 다양한 공지사항을 확인하세요.</h3>
-                        <strong>→</strong>
-                    </div>
-                </a>
+            <div class="product-info">
+              <span>SNACK</span>
+              <h3>홈런볼</h3>
+              <p>부드러운 초콜릿과 바삭한 과자의 <br />달콤한 조화</p>
+              <a href="./sub/homerun.html" class="view-more">VIEW MORE →</a>
             </div>
-        </section>
-    </main>
+          </article>
+
+          <!-- Product 03 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro3.jpg" alt="에이스" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>에이스</h3>
+              <p>커피와 함께 즐기기 좋은 <br />담백하고 바삭한 크래커</p>
+              <a href="./sub/ACE.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <!-- Product 04 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro4.jpg" alt="에이스" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>포키 블루베리</h3>
+              <p>진한 블루베리맛의 바삭한 스틱</p>
+              <a href="./sub/pocky.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <!-- Product 05 -->
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro5.png" alt="오예스 콜드브루" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>오예스 콜드브루</h3>
+              <p>차갑게 먹으면 더욱 맛있는 커피 풍미의 맛!</p>
+              <a href="./sub/oyes.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro6.jpg" alt="버터링 골드" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>버터링 골드</h3>
+              <p>부드러운 쿠키의 대명사 버터링!</p>
+              <a href="./sub/buttering.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro7.jpg" alt="구운감자" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>구운감자</h3>
+              <p>석쇠로 구워 더욱 고소한 스틱형 감자 비스켓</p>
+              <a href="./sub/potero.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro8.jpg" alt="후렌치파이 딸기" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>후렌치파이 딸기</h3>
+              <p>64겹의 파이 위에 달콤한 딸기잼이 가득</p>
+              <a href="./sub/french.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro10.jpg" alt="아이비" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>아이비</h3>
+              <p>Low Sugar 순수 크래커 !아이비!</p>
+              <a href="./sub/detail-ivy.html" class="view-more">view More</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro11.jpg" alt="계란과자" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>계란과자</h3>
+              <p>
+                계란과자의 새로운 친구 "베베핀" 함께하는 <br />우리아이 영양간식
+                <br />
+              </p>
+              <a href="./sub/egg.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro12.jpg" alt="초코픽" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>초코픽</h3>
+              <p>과자를 쏙쏙 뽑아서 콕콕 찍어먹는 재미</p>
+              <a href="./sub/chpick.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="./image/pro13.jpg" alt="사브레" />
+            </div>
+            <div class="product-info">
+              <span>BISCUIT</span>
+              <h3>사브레</h3>
+              <p>바삭하고 달콤한 유럽풍 정통 사브레!</p>
+              <a href="./sub/sable.html" class="view-more">VIEW MORE →</a>
+            </div>
+          </article>
+        </div>
+
+        <a href="#" class="more-btn">제품 전체보기</a>
+      </section>
+
+      <!-- Brand Section -->
+      <section class="brand">
+        <div class="brand-inner">
+          <p>BRAND STORY</p>
+          <h2>맛있는 행복을 <br />만들어갑니다.</h2>
+          <span
+            >오랜 시간 사랑받아온 해태제과의 이야기와 <br />다양한 브랜드를
+            만나보세요</span
+          >
+          <a href="#" class="brand-btn">브랜드 이야기</a>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section class="sweet-news">
+        <div class="news-inner">
+         <h2 class="news-main-title">SWEET NEWS</h2>
+         <div clas="news-card-list">
+          <article class="news-box active">
+            <div class="news-header">
+              <span class="category">NOTICE</span>
+              <span class="date">2026-09-17</span>
+            </div>
+            <div class="news-content">
+              <div class="thumb-img">
+                <img src="./image/pro8.jpg" alt="후렌치파이 미니">
+              </div>
+              <div class="text-box">
+                <h3 class="title">해태제과, 한입에 쏙! '후렌치파이'</h3>
+                <span class="divider"></span>
+                <p class="desc">해태제과, 한입에 쏙! '후렌치파이 미니 피넛버터크림...</p>
+              </div>
+            </div>
+          </article>
+          <article class="news-box active">
+            <div class="news-header">
+              <span class="category">NOTICE</span>
+              <span class="date">2026-09-09</span>
+            </div>
+            <div class="news-content">
+              <div class="thumb-img">
+                <img src="./image/pro14.png" alt="고향만두 와샤오롱">
+              </div>
+              <div class="text-box">
+                <h3 class="title">해태 고향만두, 와사비로 알싸하게</h3>
+                <span class="divider"></span>
+                <p class="desc">해태 고향만두, 와사비로 알싸하게 즐기는 '와샤오롱'</p>
+              </div>
+            </div>
+          </article>
+          <article class="news-box active">
+            <div class="news-header">
+              <span class="category">NOTICE</span>
+              <span class="date">2026-09-07</span>
+            </div>
+            <div class="news-content">
+              <div class="thumb-img">
+                <img src="./image/pro15.png" alt="가을 카페 에디션 ">
+              </div>
+              <div class="text-box">
+                <h3 class="title">해태제과, 과자로 즐기는 "가을카페 에디션 4종" 출시!</h3>
+                <span class="divider"></span>
+                <p class="desc">가을 카페 에디션 4종 출시!</p>
+              </div>
+            </div>
+          </article>
+         </div>
+          
     <!-- //Main -->
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-top">
-                <h2>HAITAI</h2>
-                <div class="footer-menu">
-                    <a href="#">회사소개</a>
-                    <a href="#">제품소개</a>
-                    <a href="#">브랜드</a>
-                    <a href="#">창업안내</a>
-                    <a href="#">고객센터</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>해태제과식품(주)</p>
-                <p>© HAITAI CONFECTIONERY & FOODS CO., LTD. ALL RIGHTS RESERVED</p>
-            </div>
+     <footer class="footer">
+      <div class="footer-inner">
+    <div class="footer-top">
+      <ul class="footer-nav-left">
+        <li><a href="#" class="highlight">개인정보처리방침</a></li>
+        <li><a href="#"> 이메일주소 무단수집 거부</a></li>
+        <li><a href="#">오시는길</a></li>
+      </ul>
+      <ul class="footer-nav-right">
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">채용</a></li>
+        <li><a href="#">해태몰</a></li>
+      </ul>
+    </div>
+    <div class="footer-divder"></div>
+    <div class="footer-bottom">
+      <div class="footer-info-box">
+        <p class="company-info">해태제과식품(주) 서울특별시 용산구 항강대로72길 3(남영동) 대표이사:신정훈</p>
+        <p class="copyright">COPTRIGHT (C) 2024 HAITAI CONFECTIONERY &FOODS co.,LTD ALL RIGHTS RESERVED</p>
+        <div class="footer-logo">
+          <img src="./image/logo2.png" alt="logo2">
         </div>
-    </footer>
+      </div>
+      <div class="footer-util-box">
+        <div class="cs-info">
+          <span class="cs-label">고객센터문의</span>
+          <p class="cs-number">080.233.6677 <span class="cs-sub">(수신자부담)</span></p>
+        </div>
+        <div class="footer-controls">
+          <div class="sns-list">
+            <a href="#" class="sns-btn" aria-label="instagram">
+              <img src="./image/footer_icon_insta 1.png" alt="instagram">
+            </a>
+            <a href="#" class="sns-btn" aria-label="Blog">
+              <img src="./image/footer_icon_blog 1.png" alt="blog">
+            </a>
+            <a href="#" class="sns-btn" aria-label="YouTube">
+              <img src="./image/footer_icon_youtube 1.png" alt="YouTube">
+            </a>
+          </div>
+          <div class="family-site">
+            <select name="family-site" id="familySelect">
+              <option value="">패밀리사이트</option>
+              <option value="https://www.haitai.co.kr">해태제과</option>
+              <option value="https://www.haitaimall.co.kr">해태몰</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
     <!-- //Footer -->
-
-</body>
+  </body>
 </html>
